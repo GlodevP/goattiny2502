@@ -1,0 +1,133 @@
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    bottom: 100px;
+
+    display: block;
+
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+    z-index: 3;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+
+.slick-next{
+    height: 50px;
+    width: 50px;
+    background: #07A1CE url('../img/arr-next.png') center no-repeat;
+    transition: 0.3s;
+    border-radius: 14px;
+    right: 0;
+}
+
+.slick-next:hover{
+    background: #656565 url('../img/arr-next.png') center no-repeat;
+    transition: 0.3s;
+}
+
+.slick-prev{
+    height: 40px;
+    width: 40px;
+    background: #07A1CE url('../img/arr-prev.png') center no-repeat;
+    border-radius: 14px;
+    transition: 0.3s;
+    right: 64px;
+    margin-bottom: 8px;
+}
+
+.slick-prev:hover{
+    background: #656565 url('../img/arr-prev.png') center no-repeat;
+    transition: 0.3s;
+}
+
+
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 10px 0;
+    padding: 0;
+    background: #034153;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active 
+{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #034153;
+    background: transparent;
+    box-sizing: border-box;
+    margin-left: -2px;
+}

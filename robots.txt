@@ -1,0 +1,4 @@
+# NetCat Robots file
+User-agent: *
+Disallow: /install/
+Sitemap: /sitemap.xml
