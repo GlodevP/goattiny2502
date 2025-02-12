@@ -545,9 +545,8 @@ a {
   .slider-facts2 {
       padding: 10px; 
   }
-  .nav-button-facts2 img {
-      width: 30px; 
-      height: 30px;
+  .slide-facts2 img {
+     margin-top: 30px;
   }
 }
 
@@ -630,6 +629,12 @@ a {
   display: block; 
 }
 
+@media (max-width: 768px) {
+  .case-container{
+    display: block;
+  }
+}
+
 .text-container {
   display: flex;
   gap: 20px;
@@ -650,6 +655,12 @@ a {
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .text-container{
+    display: block;
+  }
+}
+
 .image-container {
   display: flex;
   justify-content: center; 
@@ -668,6 +679,34 @@ a {
   border-radius: 10px;
   transition: transform 0.3s; 
 }
+
+@media (max-width: 768px) {
+  .image-wrapper img {
+    width: 160px;
+    height: 150px;
+  }
+  .image-container{
+      width: 600px;
+      margin-left: 70px;
+  }
+  }
+  @media (max-width: 1024px) {
+    .image-wrapper img {
+      width: 160px;
+      height: 150px;
+    }
+    }
+    @media (min-width: 0px) and (max-width: 700px) {
+      .image-wrapper img {
+          width: 120px;
+          height: 100px;
+      }
+      .image-container {
+          width: 400px;
+          margin-left: 0px;
+      }
+  }
+
 .tooltip::before {
   content: '';
   position: absolute;
@@ -714,6 +753,13 @@ a {
   width: 100%;
   height: auto;
   display: block;
+}
+
+
+@media (max-width: 768px) {
+.goats-container {
+  display:block;
+}
 }
 
 .history-container {
@@ -766,6 +812,40 @@ a {
   left: 0;
   width: 83%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .history-container {
+    margin-top: -130px;
+  }
+  .history-bottom-image {
+    display: none;
+  }
+  .history-item-white {
+    background-image: none;
+  }
+  .history-year{
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 900px) {
+  .history-container{
+    width: 1200px;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+  .history-item-blue{
+    width: 130px;
+  }
+  .history-item-white{
+    width: 130px;
+  }
+  .history-bottom-image{
+    width: 920px;
+  }
+  }
+  @media (min-width: 0px) and (max-width: 700px) {
+    
 }
 
 .catalog {
@@ -1088,6 +1168,21 @@ text-align: right;
   font-size: 54px;
   font-weight: 700;
   color: #0681a5;
+}
+
+@media (max-width: 768px) {
+  .number{
+    width: 450px;
+    margin-left: 0px;
+    padding: 215px 20px 10px 0;
+  }
+  .number-item:last-child {
+margin-left: 0px;
+  }
+  .number-block{
+    margin-left: -150px;
+    margin-bottom: 150px;
+      }
 }
 
 .about {
