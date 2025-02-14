@@ -3378,8 +3378,8 @@ align-items: center;*/
 }
 
 .benefits .tabs-nav {
-  /* width: auto;*/
-  width: 460px;
+  width: auto;
+  /*width: 460px;*/
 
   min-height: 60px;
 
