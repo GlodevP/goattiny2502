@@ -541,12 +541,19 @@ a {
   height: 40px; 
 }
 
-@media (max-width: 768px) {
-  .slider-facts2 {
-      padding: 10px; 
+
+@media (max-width: 426px) {
+  .nav-button-facts2 img {
+    width: 25px; 
+    height: 25px; 
+    margin-bottom: 40px;
   }
-  .slide-facts2 img {
-     margin-top: 30px;
+}
+@media (max-width: 321px) {
+  .nav-button-facts2 img {
+    width: 20px; 
+    height: 20px; 
+    margin-bottom: 30px;
   }
 }
 
@@ -1142,13 +1149,13 @@ a {
 
 .number {
   background: url("../img/Group 21.png") center no-repeat;
-  width: 3500px;
+  width: 1500px;
   height: auto;
   padding: 215px 0 10px 0;
   display: flex;
   justify-content: flex-start; 
   align-items: center; 
-  margin:0 0 0 -1400px;
+  margin:0 0 0 -130px;
 }
 
 .number-block {
@@ -1174,49 +1181,95 @@ text-align: right;
   color: #0681a5;
 }
 
-@media (max-width: 768px) {
-  .number{
-    width: 800px;
-    margin-left: 0px;
-    padding: 215px 20px 10px 0;
+@media (min-width: 427px) and (max-width: 768px) {
+  .number {
+    width: 1000px;
+    margin:0 0 0 -260px;
+  }
+  .number-block {
+    margin-left: 160px; 
+    margin-bottom: 150px;
   }
   .number-item:last-child {
-margin-left: 0px;
+    margin-left: 0px;
   }
-  .number-block{
-    margin-left: 150px;
-    margin-bottom: 150px;
-    flex-direction: column;
-      } 
-      .number-item {
-        margin: 10px 150px; 
-        text-align: right;
-        }
+  .number p{
+    font-size: 15px;
+  }
+  .number-item .count{
+    font-size: 38px;
+  }
 }
 
-@media (min-width: 1024px) and (min-width: 900px){
-  .number-block{
-    margin-left: 50px;
-    margin-bottom: 150px;
-      }
-      .number-item {
-        margin: 10px 150px; 
-        text-align: right;
-        }
+@media (min-width: 850px) and (max-width: 1025px){
+  .number {
+    width: 1200px;
+    margin:0 0 0 -215px;
+  }
+  .number-block {
+    margin-left: 20px; 
+    margin-bottom: 120px;
+  }
 }
-@media (max-width: 426px) {
-  .number-block{
-    margin-left: -10px;
-    margin-bottom: 15px;
-    width: 200px;
+
+@media (min-width: 400px) and (max-width: 426px) {
+  .number {
+    width: 670px;
+    margin:0 0 0 -260px;
+  }
+  .number-block {
+    margin-right: 250px; 
+    margin-bottom: 150px;
+  }
+  .number p{
+    font-size: 11px;
+  }
+  .number-item .count{
+    font-size: 26px;
+  }
+  .number-item:last-child {
+    margin-left: 0px;
+  }
+  }
+
+  @media (min-width: 330px) and (max-width: 376px) {
+    .number {
+      width: 650px;
+      margin:0 0 0 -290px;
+    }
+    .number-block {
+      margin-right: 220px; 
+      margin-bottom: 80px;
+    }
+    .number p{
+      font-size: 10px;
+    }
+    .number-item .count{
+      font-size: 25px;
+    }
+    .number-item:last-child {
+      margin-left: 0px;
+    }
+    }
+    @media (min-width: 0px) and (max-width: 321px) {
+      .number {
+        width: 600px;
+        margin:0 0 0 -295px;
       }
-      .number{
-        width: 450px;
+      .number-block {
+        margin-right: 180px; 
+        margin-bottom: 80px;
+      }
+      .number p{
+        font-size: 9px;
+      }
+      .number-item .count{
+        font-size: 20px;
+      }
+      .number-item:last-child {
         margin-left: 0px;
-        padding: 215px 0px 10px 0px;
       }
-  }
-
+      }
 .about {
   padding: 80px 0 40px 0;
 }
@@ -2697,9 +2750,7 @@ margin-left: 0px;
     width: 33%;
   }
 
-  .number-item .count {
-    font-size: 36px;
-  }
+
 
   .number-item:first-child {
     margin: 0;
@@ -3378,7 +3429,7 @@ align-items: center;*/
 }
 
 .benefits .tabs-nav {
-  width: auto;
+   width: auto;
   /*width: 460px;*/
 
   min-height: 60px;
