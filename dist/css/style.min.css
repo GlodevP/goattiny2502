@@ -722,7 +722,7 @@ a {
           height: 100px;
       }
       .image-container {
-          width: 400px;
+          width: auto;
           margin-left: 0px;
       }
   }
